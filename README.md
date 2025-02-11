@@ -7,7 +7,7 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
 
 ### **1. How to recover and back-calculate the missing/incorrect data**
 **Event Replay**:
-   - Replay events from the event bus such as Kafka or event logs such as AWS S3)
+   - Replay events from the event bus such as Kafka or event logs such as AWS S3 / HDFS)
    - Reset the consumer offset to reprocess events from the point of failure
      
 **Snapshoting**:
