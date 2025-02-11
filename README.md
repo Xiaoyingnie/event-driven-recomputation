@@ -73,7 +73,7 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
   - Use Flink's stateful processing and checkpointing features to simplify event replay and state recovery
   - leverage Flink's distributed processing capabilities to handle large volumes of events
     
-### **If these tools applicable, how the solution scale to process millions of events per hour**
+### **9. If these tools applicable, how the solution scale to process millions of events per hour**
 **Ingestion: Distributed Event Bus (Kafka)**:
 - Kafka works as an event streaming ingestion system, enabling high-throughput and low-latency event ingestion.
 - Partitioon events by key to distribute evenly
