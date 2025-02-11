@@ -23,7 +23,7 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
 ### **2. Tools and Techniques**  
 **Tools**:
 - **Event Bus**: Kafka (event streaming and replay)
-- **Storage**: AWS S3
+- **Storage**: AWS S3 or HDFS
 - **Processing**: Apache Spark (if can tolerate micro-batch processing), Apace Flink (real-time event processing)
 - **Scripting**: Python (for custome recalculation scripts)
 
