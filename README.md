@@ -63,7 +63,7 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
 - **Event Log Availability**: if event logs are lost, data recovery becomes impossible.
 - **Real-time Constraintes**: replaying events and recalculating results would introduce latency.
 
-### **8. If had access to more tools, how would approach change?**
+### **8. If had access to more tools, how would approach change**
 **With access to a Database**:
 - Store events and system state directly in the database
 - query the database for the latest state instead of replaying events.
