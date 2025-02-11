@@ -92,7 +92,7 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
 - batch writes to the database to reduce the number of transactions
 
 **Event Log Storage**:
-- store event logs in AWS or HDFS, partition by date for efficient retrieval
+- store event logs in AWS S3 or HDFS, partition by date for efficient retrieval
 - using incremental loading only save the changes data since last snapshot
 
 **Data Validation**:
