@@ -7,7 +7,7 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
 
 ### **1. How to recover and back-calculate the missing/incorrect data**
 **Event Replay**:
-   - Replay events from the event bus such as Kafka or event logs such as AWS S3 / HDFS)
+   - Replay events from the event bus such as Kafka or event logs such as (AWS S3 / HDFS)
    - Reset the consumer offset to reprocess events from the point of failure
      
 **Snapshoting**:
@@ -22,10 +22,10 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
    - Use unique event identifiers to track the processed events.
 ### **2. Tools and Techniques**  
 **Tools**:
-- **Event Bus**: Kafka ( event streaming and replay)
+- **Event Bus**: Kafka (event streaming and replay)
 - **Storage**: AWS S3
-- **Processing**: Apache Spark ( if can tolerate micro-batch processing), Apace Flink ( real-time event processing)
-- **Scripting**: Python ( for custome recalculation scripts)
+- **Processing**: Apache Spark (if can tolerate micro-batch processing), Apace Flink (real-time event processing)
+- **Scripting**: Python (for custome recalculation scripts)
 
 **Techniques**:
 - **Distributed Computing**: break down task into smaller sub-tasks and process them across multiple codes
@@ -41,7 +41,7 @@ In the event-driven system, messages are emitted onto an event bus. A worker ser
 - Python script ('recalculate_events.py') shows how to re-read events from a log and recalculate the results.
 
 ### **5. Summarize the approach**
-**Event Replay**: Re-process eents from event bus (Kafka) or event logs ( AWS S3 or HDFS) to recover missing or incorrect data.
+**Event Replay**: Re-process eents from event bus (Kafka) or event logs (AWS S3 or HDFS) to recover missing or incorrect data.
 
 **Idempotency**: Ensure the worker service can handle duplicate events without causing errors by using unique event identifiers ( event ID).
 
